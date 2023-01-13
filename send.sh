@@ -48,6 +48,7 @@ TIMESTAMP=$(date --utc +%FT%TZ)
 
 if [ -z $LINK_ARTIFACT ] || [ $LINK_ARTIFACT = false ] ; then
   WEBHOOK_DATA='{
+    "username": "",
     "avatar_url": "https://gitlab.com/favicon.png",
     "embeds": [ {
       "color": '$EMBED_COLOR',
@@ -76,6 +77,7 @@ if [ -z $LINK_ARTIFACT ] || [ $LINK_ARTIFACT = false ] ; then
     }'
 else
 	WEBHOOK_DATA='{
+	        "username": "",
 		"avatar_url": "https://gitlab.com/favicon.png",
 		"embeds": [ {
 			"color": '$EMBED_COLOR',
