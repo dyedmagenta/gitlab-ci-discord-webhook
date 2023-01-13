@@ -77,7 +77,7 @@ if [ -z $LINK_ARTIFACT ] || [ $LINK_ARTIFACT = false ] ; then
     }'
 else
 	WEBHOOK_DATA='{
-	        "username": "",
+		"username": "",
 		"avatar_url": "https://gitlab.com/favicon.png",
 		"embeds": [ {
 			"color": '$EMBED_COLOR',
